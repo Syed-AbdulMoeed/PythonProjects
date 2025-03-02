@@ -1,0 +1,4 @@
+output 5 chosen names of artist and select one of them
+added display of choice and selection of index of artist and an option to search again
+show menu for selected artist
+options: top tracks, top albums, recommended artistis, + url
