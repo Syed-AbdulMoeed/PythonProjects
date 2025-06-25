@@ -1,0 +1,22 @@
+{% extends 'base.html' %}        
+{% block content %}
+        <form action="/post" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <P>
+                {{ form.username.label }}
+                {{ form.username(size=32) }}
+            </P> 
+            <p>
+                {{ form.comment.label }}
+                {{ form.comment(size=32) }}
+            </p>
+                {{ form.submit }}
+        </form>
+        <hr/>
+        <h3>Comments:</h3>
+        {% if posts %}
+            {% for post in posts %}
+                <b>{{ post[0] }} :</b> {{ post[1] }} <br/>
+            {% endfor %}
+        {% endif %} 
+{% endblock %}
