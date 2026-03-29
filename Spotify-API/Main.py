@@ -144,14 +144,14 @@ def main():
                 view_albums(token, artist_id)
             case '3':
                 if len(artist['genres']) == 0:
-                    print("nahi milay ka koi, no registered genres")
+                    print("no registered genres")
                 else: 
                     view_rec_artists(token, artist['genres'][0])
             case '4' :
-                print('nikl yaha say')
+                print('exitting')
                 sys.exit()
             case _ :
-                print("insaan ka bucha bunja ghuday") 
+                print("enter 1-4") 
 
 
     '''
